@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title>Formulário</title>
+        <link rel="stylesheet" type="text/css" href="estilo_formulário.css">
+    </head>
+    <body>
+        <h1>Formulário</h1>
+        <form action="/action_page.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <!--<legend>Dados</legend>-->
+                            <h2>Dados</h2>
+                            <table border="10">
+                                
+                                <tr> 
+                                    <td><label>Primeiro nome:*</td> 
+                                    <td><input type="text" name="pname" placeholder="Digite seu nome" required></label></td> 
+                                </tr>
+                                
+                                <tr>
+                                    <td><label>Sobrenome:*</td> 
+                                    <td><input type="text" name="sname" placeholder="Digite seu sobrenome" required></label></td> 
+                                </tr>
+                                
+                                <tr>
+                                    <td><label>Email:*</td> 
+                                    <td><input type="email" name="email" placeholder="Digite seu email" required></label> </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><label>Data de nascimento:*</td> 
+                                    <td><input type="date" name="nasc" required></label></td> 
+                                </tr>
+                               
+                                <tr>
+                                    <td><label>CEP:*</td> 
+                                    <td><input type="number" name="cep" placeholder="Número" required></label></td> 
+                                </tr>
+                               
+                                <tr>
+                                    <td><label>Documento*</label></td> 
+                                    <td><label>CPF:</label><input type="radio" name="documento"><label>//   CNPJ:</label><input type="radio" name="documento"></td> 
+                                </tr>
+                               
+                                <tr>
+                                    <td><label>*</label></td>
+                                    <td><input type="number" name="cpf/cnpj" required></td> 
+                                </tr>
+                               
+                                <tr>
+                                    <td><label>Senha:*</td> 
+                                    <td><input type="password" name="senha" required></label></td> 
+                                </tr>
+                               
+                                <tr>
+                                    <td><label>Confirmar Senha:*</td> 
+                                    <td><input type="password" name="csenha" required></label></td> 
+                                </tr>
+
+                            </table>                    
+                        
+                            <br>
+                        
+                            <table border="10">
+                                <tr>
+                                    <td><textarea placeholder="Críticas / Sujestões / Grosserias" cols="42" rows="10"></textarea></td>
+                                </tr>
+                            </table> 
+                        </fieldset>
+                        
+                        <br>
+
+                        <fieldset>
+                            <h2>Gosta de...</h2>
+                            <table border="10">
+                                
+                                <tr>
+                                    <td><label>Homem</label><input type="checkbox" name="homem"></td>
+                                    <td><label>Casal (Ele/Ela)</label><input type="checkbox" name="Casal (Ele/Ela)"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Mulher</label><input type="checkbox" name="mulher"></td>
+                                    <td><label>Casal (Ele/Ele)</label><input type="checkbox" name="Casal (Ele/Ele)"></td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Trans</label><input type="checkbox" name="trans"></td>
+                                    <td><label>Casal (Ela/Ela)</label><input type="checkbox" name="Casal (Ela/Ela)"></td>
+                                </tr>
+
+                            </table>
+                        </fieldset>
+
+                        <br>
+                        
+                        <fieldset>
+                            <h2>Marca de carro preferida</h2>
+                            <select>
+                                <option value="chevrolet">Chevrolet</option>
+                                <option value="volvo" selected>Volvo</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                                <option value="volks-wagen">Volks Wagen</option>
+                            </select>
+                        </fieldset>
+
+                        <!--
+                        <br>
+                        <select>
+                            <optgroup label="Swedish Cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="German Cars">
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </optgroup>  
+                        </select>  
+                        -->                              
+                    </td>
+                   
+                    <td width="200" ></td>
+                   
+                    <td>
+                        <input type="submit" name="envia" value="GOGOGO"><br><br>
+                        <input type="reset" name="apagar" value="Apagar tudo"><br><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+
+</html>
